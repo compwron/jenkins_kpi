@@ -1,4 +1,4 @@
-class KpiTracker
+class PipelineDuration
   require 'open-uri'
   require 'json'
 
@@ -37,6 +37,7 @@ class KpiTracker
   end
 
   def downstream_job job
-    get_hash(job)["downstreamProjects"].first["url"]
+    downstream_project = get_hash(job)["downstreamProjects"].first
+    downstream_project ? downstream_project["url"] : "There is no downstream build"
   end
 end

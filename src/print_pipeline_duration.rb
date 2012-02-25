@@ -4,7 +4,7 @@ class PrintPipelineDuration
 
 	first_job_in_pipeline = ARGV[0]
 
-  puts KpiTracker.new.get_pipeline_duration(first_job_in_pipeline)
+  puts PipelineDuration.new.get_pipeline_duration(first_job_in_pipeline)
   puts "	This only adds the total duration of the most recent build in each job in the pipeline. 
   	It doesn't actually know which build to trace through."
 end
