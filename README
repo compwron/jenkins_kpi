@@ -7,3 +7,6 @@ ruby src/print_pipeline_duration.rb http://localhost:8080/job/job1.in.pipeline/
 
 This mini-app only calculates how long the latest build took to go through the pipeline
 And doesn't actually know how to follow a build, just grabs the latest build time for each job in the pipeline
+
+to run tests: 
+ruby test/units/test_pipeline_duration.rb
