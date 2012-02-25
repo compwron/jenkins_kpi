@@ -1,0 +1,4 @@
+Should be able to view the time spent in each pipeline stage for each build
+Should be able to view the average time spent in each pipeline stage for each product
+Should be able to view the entire time spent in the pipeline for each build
+Should be able to view the average time spent in the pipeline for each product
