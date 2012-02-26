@@ -1,7 +1,7 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
-require File.expand_path(File.dirname(__FILE__) + '/../../src/pipeline_duration')
+require File.expand_path(File.dirname(__FILE__) + '/../../src/pipeline')
 
-describe PipelineDuration do
+describe Pipeline do
   let(:job_url) { 'some_damn_url' }
   before do
     Job.should_receive(:new).with(job_url).and_return(job)
