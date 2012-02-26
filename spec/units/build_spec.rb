@@ -4,7 +4,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../../src/build')
 describe Build do
   let(:build_url) { 'http://localhost:8080/job/job1.in.pipeline/1' }
   let(:build_id) { '1' }
-  let(:build_json) { '{"actions":[{"causes":[{"shortDescription":"Started by user anonymous","userId":null,"userName":"anonymous"}]}],"artifacts":[],"building":false,"description":null,"duration":1407,"fullDisplayName":"job1.in.pipeline #1","id":"2012-02-23_22-49-32","keepLog":false,"number":1,"result":"SUCCESS","timestamp":1330066172459,"url":"http://localhost:8080/job/job1.in.pipeline/1/","builtOn":"","changeSet":{"items":[],"kind":null},"culprits":[]}' }
+  let(:build_json) { '{ "duration":1407 }' }
   subject { Build.new build_url }
 
   before do
