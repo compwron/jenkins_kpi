@@ -1,5 +1,5 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
-require File.expand_path(File.dirname(__FILE__) + '/../../src/pipeline')
+require File.expand_path(File.dirname(__FILE__) + '/../../lib/pipeline')
 
 describe Pipeline do
   before do
@@ -15,6 +15,6 @@ describe Pipeline do
 
   it "calculates the total duration of the last build of the pipeline" do
     first_job_in_pipeline = 'http://localhost:8080/job/job1.in.pipeline/'
-    subject.pipeline_duration(first_job_in_pipeline).should == 0.028
+    subject.duration(first_job_in_pipeline).should == 0.028
   end
 end

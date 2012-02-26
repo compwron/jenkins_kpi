@@ -1,5 +1,5 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
-require File.expand_path(File.dirname(__FILE__) + '/../../src/job')
+require File.expand_path(File.dirname(__FILE__) + '/../../lib/job')
 
 describe Job do
   let(:job_url) { 'http://localhost:8080/job/job1.in.pipeline/' }

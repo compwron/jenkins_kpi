@@ -4,4 +4,3 @@ Should be able to view the entire time spent in the pipeline for each build
 Should be able to view the average time spent in the pipeline for each product
 
 make an executable to run the print
-take out uneccecaries from json

@@ -1,5 +1,5 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
-require File.expand_path(File.dirname(__FILE__) + '/../../src/build')
+require File.expand_path(File.dirname(__FILE__) + '/../../lib/build')
 
 describe Build do
   let(:build_url) { 'http://localhost:8080/job/job1.in.pipeline/1' }

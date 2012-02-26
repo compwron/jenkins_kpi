@@ -1,5 +1,5 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
-require File.expand_path(File.dirname(__FILE__) + '/../../src/pipeline')
+require File.expand_path(File.dirname(__FILE__) + '/../../lib/pipeline')
 
 describe Pipeline do
   let(:job_url) { 'some_damn_url' }
@@ -11,7 +11,7 @@ describe Pipeline do
     let(:job) { stub(:downstream_job => nil, :last_duration => 0.1337) }
 
     it "returns the duration of the job" do
-      subject.pipeline_duration(job_url).should == 0.1337
+      subject.duration(job_url).should == 0.1337
     end
   end
 
@@ -24,7 +24,7 @@ describe Pipeline do
     end
 
     it "returns the sum of duration of the job and its downstream jobs" do
-      subject.pipeline_duration(job_url).should == (job.last_duration + downstream_job.last_duration)
+      subject.duration(job_url).should == (job.last_duration + downstream_job.last_duration)
     end
   end
 end
