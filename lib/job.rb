@@ -1,4 +1,3 @@
-require File.dirname(__FILE__) + '/jenkins_resource'
 require File.dirname(__FILE__) + '/build'
 
 class Job < JenkinsResource
