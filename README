@@ -1,5 +1,5 @@
 to get pipeline duration:
-ruby src/print_pipeline_duration.rb <url of first job in pipeline>
+./bin/duration.rb <url of first job in pipeline>
 
 example:
 ruby src/print_pipeline_duration.rb http://localhost:8080/job/job1.in.pipeline/
