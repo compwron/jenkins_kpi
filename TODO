@@ -1,6 +1,11 @@
 Should be able to view the time spent in each pipeline stage for each build
-Should be able to view the average time spent in each pipeline stage for each product
-Should be able to view the entire time spent in the pipeline for each build
-Should be able to view the average time spent in the pipeline for each product
+- identify a build? 
+- for a build, view time spent.
+- view time spent in each job in a pipeline
 
-make an executable to run the print
+
+Should be able to view the average time spent in each pipeline stage for each product
+
+Should be able to view the entire time spent in the pipeline for each build done (kinda - need to add ability to use fingerprint)
+
+Should be able to view the average time spent in the pipeline for each product
